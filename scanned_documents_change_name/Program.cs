@@ -47,10 +47,16 @@ namespace scanned_documents_change_name
 
                 output_name = Path.Combine("out", change_name(Path.GetFileName(file_path_name)));
 
+                File.Copy(file_path_name, output_name);
+
 
                 Console.WriteLine("Input name: " + file_path_name + " Output name: " + output_name);
 
-           
+                var t = File.GetLastWriteTime(file_path_name);
+
+            
+
+      
 
             }
 
