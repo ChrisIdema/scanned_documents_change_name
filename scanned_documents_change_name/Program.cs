@@ -47,6 +47,7 @@ namespace scanned_documents_change_name
                     (Path.GetExtension(file_path_name) == ".pdf")||
                     (Path.GetExtension(file_path_name) == ".png")||
                     (Path.GetExtension(file_path_name) == ".jpg")
+                  //todo: add if it doesnt start with "SCAN_"
                   )
                 {
 
