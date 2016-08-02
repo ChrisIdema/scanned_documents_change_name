@@ -17,7 +17,7 @@ namespace scanned_documents_change_name
 
             //return "test" + s;
 
-            return "SCAN_" + d.ToString("yyyyMMdd_hhmmss") + Path.GetExtension(s);
+            return "SCAN_" + d.ToString("yyyyMMdd_HHmmss") + Path.GetExtension(s);
 
         }
 
