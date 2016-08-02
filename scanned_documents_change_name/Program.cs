@@ -43,11 +43,13 @@ namespace scanned_documents_change_name
             foreach (string file_path_name in input_file_paths)
             {
 
-                if( 
-                    (Path.GetExtension(file_path_name) == ".pdf")||
-                    (Path.GetExtension(file_path_name) == ".png")||
-                    (Path.GetExtension(file_path_name) == ".jpg")
-                  //todo: add if it doesnt start with "SCAN_"
+                if( (
+                        (Path.GetExtension(file_path_name) == ".pdf")||
+                        (Path.GetExtension(file_path_name) == ".png")||
+                        (Path.GetExtension(file_path_name) == ".jpg")
+                    )
+                    &&
+                    (!Path.GetExtension(file_path_name).StartsWith("SCAN_"))
                   )
                 {
 
